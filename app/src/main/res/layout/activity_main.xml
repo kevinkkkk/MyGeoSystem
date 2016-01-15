@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView android:hint="your current location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationInfo"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getStreetName"
+        android:text="Where am I?"/>
+
+       <com.github.lzyzsd.circleprogress.DonutProgress
+           android:layout_marginLeft="50dp"
+           android:id="@+id/donut_progress"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           custom:donut_progress="30"
+           android:visibility = "gone"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/locationCoordinate"
+           android:visibility="gone"/>
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="what you want to do?"
+        android:visibility="gone"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="38sp"
+        android:id="@+id/findTitle"
+        android:entries="@array/businesses"
+        android:text="Find businesses?"
+        android:background="#69b6b6b6"
+        android:visibility="gone"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:id="@+id/findWeather"
+        android:text="Find weather here?"
+        android:visibility="gone"/>
+
+</LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myContainer"
+        android:background="#00000000"
+        android:visibility="gone"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MyGeoSystem</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="api_key">4b55015444eb5eca3fd36417b78c060f</string>
+    <string name="weather_sunny">&#xf00d;</string>
+    <string name="weather_clear_night">&#xf02e;</string>
+
+    <string name="weather_foggy">&#xf014;</string>
+    <string name="weather_cloudy">&#xf013;</string>
+    <string name="weather_rainy">&#xf019;</string>
+    <string name="weather_snowy">&#xf01b;</string>
+    <string name="weather_thunder">&#xf01e;</string>
+    <string name="weather_drizzle">&#xf01c;</string>
+
+    <string-array name="businesses">
+        <item>Find businesses?</item>
+        <item>restaurant</item>
+        <item>clinic</item>
+        <item>library</item>
+        <item>gas station</item>
+        <item>cinema</item>
+        <item>swimming</item>
+        <item>pharmacy</item>
+        <item>post office</item>
+        <item>you name it</item>
+    </string-array>
+
+</resources>
