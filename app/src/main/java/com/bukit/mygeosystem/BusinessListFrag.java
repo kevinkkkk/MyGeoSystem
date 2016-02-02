@@ -44,6 +44,8 @@ public class BusinessListFrag extends Fragment implements WeatherView<YellowPage
 
     OnVendorSelectedListener listener;
 
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
